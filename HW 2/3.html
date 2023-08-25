@@ -22,16 +22,15 @@
   "use strict";
 
 const dayNumber = Number.parseFloat(prompt("Введите число от 1 до 31"))
-if (dayNumber > 31 || dayNumber < 1) {
-  alert('Неверное значение');
-} else if (dayNumber >= 1 && dayNumber <= 10) {
+if (dayNumber >= 1 && dayNumber <= 10) {
   alert(`Число ${dayNumber} попадает в 1-ую декаду месяца.`); 
 } else if (dayNumber > 10 && dayNumber <= 20) {
   alert(`Число ${dayNumber} попадает во 2-ую декаду месяца.`);
 } else if (dayNumber > 20 && dayNumber <= 31) {
   alert(`Число ${dayNumber} попадает в 3-ю декаду месяца.`);
-} else if (dayNumber > 31 && dayNumber < 1) 
+} else (dayNumber > 31 && dayNumber < 1) 
   alert('Неверное значение');
+
 </script>
 </body>
 </html>
